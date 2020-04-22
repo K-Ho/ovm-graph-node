@@ -83,7 +83,6 @@ where
         )));
     }
 
-    query.validate_fields()?;
 
     let complexity = query.complexity(options.max_depth).map_err(|e| vec![e])?;
 
